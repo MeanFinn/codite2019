@@ -1,0 +1,23 @@
+html,body {
+	background: url(../img/loginbg1.PNG);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+.form-error {
+	color: #D8000C;
+}
+
+select {
+	visibility: hidden;
+	display: block;
+	position: absolute;
+}
