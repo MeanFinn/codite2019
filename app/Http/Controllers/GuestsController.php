@@ -45,8 +45,8 @@ class GuestsController extends Controller
       'last_name',
       'first_name',
       'middle_initial',
-      'School',
-      'Position'
+      'school',
+      'position'
     ]));
 
     foreach ($checker as $check) {

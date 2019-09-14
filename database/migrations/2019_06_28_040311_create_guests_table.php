@@ -19,8 +19,8 @@ class CreateGuestsTable extends Migration
             $table->string('first_name');
             $table->string('middle_initial')
             ->nullable();
-            $table->string('School');
-            $table->string('Position');
+            $table->string('school');
+            $table->string('position');
             $table->timestamps();
         });
     }

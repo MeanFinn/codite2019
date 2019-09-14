@@ -16,11 +16,11 @@
 	</div>
 	<div class="row">
 		<div class="input-field col-sm-6 pl-0">
-			<input type="text" class="form-control validate" id="School" name="School" required>
-			<label for="School">School</label>
+			<input type="text" class="form-control validate" id="school" name="school" required>
+			<label for="school">School</label>
 		</div>
 		<div class="input-field col-sm-6 pl-0">
-			<input type="text" class="form-control validate" id="Position" name="Position" required>
+			<input type="text" class="form-control validate" id="position" name="position" required>
 <!-- 			<select id="college" type="text" name ="college" class="w-10 validate" required>
 				{{-- <option value="undefined">Not Specified (Ticket)</option> --}}
 				<option value="law">College of Law</option>
@@ -32,7 +32,7 @@
 				<option value="educ">College of Education</option>
 				<option value="cfad">College of Fine Arts, Architecture and Design</option>
 			</select> -->
-			<label for="Position">Position</label>
+			<label for="position">Position</label>
 		</div>
 	</div>
 	<div class="w-100 center-align">

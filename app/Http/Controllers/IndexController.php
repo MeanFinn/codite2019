@@ -62,8 +62,8 @@ class IndexController extends Controller
 			$guests = Guest::where('first_name', 'LIKE', '%' . $request->search . '%')
 			->orWhere('middle_initial', 'LIKE', '%' . $request->search . '%')
 			->orWhere('last_name', 'LIKE', '%' . $request->search . '%')
-			->orWhere('School', 'LIKE', '%' . $request->search . '%')
-			->orWhere('Position', 'LIKE', '%' . $request->search . '%')
+			->orWhere('school', 'LIKE', '%' . $request->search . '%')
+			->orWhere('position', 'LIKE', '%' . $request->search . '%')
 			->get();
 
 			$page ++;

@@ -13,10 +13,9 @@ use App\Http\Controllers\Controller;
 class ExcelReport extends Controller
 {
 	public function export() {
-		$user_id = auth()->user()->id;
-		$name = User::find($name);
-		$school = User::find($school);
-		$position = User::find($position);
+		$name = Guest::find($name);
+		$school = Guest::find($school);
+		$position = Guest::find($position);
 		$timestamp = Carbon::now('+8:00');
 
 		return Excel::download(new AccountsExport, $name . ' Accounts ' . $school . ' Accounts '. $position . ' Accounts ' . $timestamp . '.xlsx');
