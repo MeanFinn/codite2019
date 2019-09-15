@@ -20,18 +20,15 @@
 			<label for="school">School</label>
 		</div>
 		<div class="input-field col-sm-6 pl-0">
-			<input type="text" class="form-control validate" id="position" name="position" required>
-<!-- 			<select id="college" type="text" name ="college" class="w-10 validate" required>
+<!-- 			<input type="text" class="form-control validate" id="position" name="position" required> -->
+			<select id="position" type="text" name ="position" class="w-10 validate" required>
 				{{-- <option value="undefined">Not Specified (Ticket)</option> --}}
-				<option value="law">College of Law</option>
-				<option value="ccss">College of Computer Studies and Systems</option>
-				<option value="dent">College of Dentistry</option>
-				<option value="cas">College of Arts and Sciences</option>
-				<option value="cba">College of Business Administration</option>
-				<option value="eng">College of Engineering</option>
-				<option value="educ">College of Education</option>
-				<option value="cfad">College of Fine Arts, Architecture and Design</option>
-			</select> -->
+				<option value="dean">Dean</option>
+				<option value="assocdean">Associate Dean</option>
+				<option value="deptchair">Department Chair</option>
+				<option value="faculty">Faculty</option>
+				<option value=others>Others</option>
+			</select>
 			<label for="position">Position</label>
 		</div>
 	</div>

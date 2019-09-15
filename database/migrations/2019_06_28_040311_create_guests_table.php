@@ -20,7 +20,10 @@ class CreateGuestsTable extends Migration
             $table->string('middle_initial')
             ->nullable();
             $table->string('school');
-            $table->string('position');
+            $table->enum('position', [
+                'dean', 'assocdean', 'deptchair', 'faculty',
+                'others',
+            ]);
             $table->timestamps();
         });
     }

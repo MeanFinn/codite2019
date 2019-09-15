@@ -13,7 +13,9 @@ use App\Http\Controllers\Controller;
 class ExcelReport extends Controller
 {
 	public function export() {
-		$name = Guest::find($name);
+		$last_name = Guest::find($last_name);
+		$First_name = Guest::find($first_name);
+		$middle_initial = Guest::find($middle_initial);
 		$school = Guest::find($school);
 		$position = Guest::find($position);
 		$timestamp = Carbon::now('+8:00');

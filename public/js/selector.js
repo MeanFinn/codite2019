@@ -1,3 +1,3 @@
 $(document).ready(function(){
-	$('select#college').formSelect();
+	$('select#position').formSelect();
 });

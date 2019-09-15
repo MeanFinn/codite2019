@@ -43,9 +43,27 @@
 					<tr>
 						<td>{{ $guest->last_name }}, {{ $guest->first_name }} @if($guest->middle_initial != NULL){{ $guest->middle_initial }}@endif</td>
 						<td>{{ $guest->School }}</td>
-						<td>{{ $guest->Position }}</td>>
-							
-
+						<td>@switch($guest->Position)
+							@case('undefined')
+							Not Specified (Ticket)
+							@break
+							@case('dean')
+							Dean
+							@break
+							@case('assocdean')
+							Associate Dean
+							@break
+							@case('deptchair')
+							Department Chair
+							@break
+							@case('faculty')
+							Faculty
+							@break
+							@case('others')
+							Others
+							@break
+							@endswitch
+						</td>
 						<td>{{ \Carbon\Carbon::parse($guest->created_at, 'UTC')->isoFormat('MMMM D, YYYY - h:mm a') }}</td>
 					</tr>
 					@endforeach
