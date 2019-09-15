@@ -23,5 +23,5 @@ Route::group(['middleware' => 'auth'], function() {
 	Route::get('logs', 'IndexController@logs');
 	Route::post('logs', 'IndexController@logs');
 	Route::get('delete/{id}', 'GuestsController@destroy');
-	Route::get('report', 'ExcelReport@create');
+	// Route::get('report', 'ExcelReport@create');
 });

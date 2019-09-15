@@ -9,7 +9,7 @@
 			</div>
 			<div class="col-4 align-middle">
 				<a href="{{ url('/logout') }}" class="btn btn-danger float-right mb-2"><i class="fas fa-sign-out-alt pr-1"></i>Sign out</a>
-				<a href="{{ url('/report') }}" class="btn btn-success float-right mr-2" title="Generate Report Document"><i class="fas fa-file-alt pr-1"></i>Report</a>
+<!-- 				<a href="{{ url('/report') }}" class="btn btn-success float-right mr-2" title="Generate Report Document"><i class="fas fa-file-alt pr-1"></i>Report</a> -->
 			</div>
 		</div>
 	</div>
