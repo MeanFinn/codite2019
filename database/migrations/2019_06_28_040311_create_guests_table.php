@@ -19,8 +19,8 @@ class CreateGuestsTable extends Migration
             $table->string('first_name');
             $table->string('middle_initial')
             ->nullable();
-            $table->string('school');
-            $table->enum('position', [
+            $table->string('School');
+            $table->enum('Position', [
                 'dean', 'assocdean', 'deptchair', 'faculty',
                 'others',
             ]);

@@ -10,7 +10,7 @@ class Guest extends Model
 		'last_name',
 		'first_name',
 		'middle_initial',
-		'school',
-		'position'
+		'School',
+		'Position'
 	];
 }
